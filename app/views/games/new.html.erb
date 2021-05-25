@@ -1,0 +1,19 @@
+<h1>Share your board game</h1>
+
+<%= simple_form_for(@game) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :description %>
+    <%= f.input :type %>
+    <%= f.input :min_players %>
+    <%= f.input :max_players %>
+    <%= f.input :price %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
