@@ -1,1 +1,10 @@
-<h1>See all the games here</h1>
+<div class="container">
+  <h1>See all the games here</h1>
+  <ul>
+    <% @games.each do |game| %>
+    <li>
+      <p> <%= link_to game.name, game_path(game) %> | <%= link_to "Rent game", new_user_session_path %> </p>
+    </li>
+    <% end %>
+  </ul>
+</div>
