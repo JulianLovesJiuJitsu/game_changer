@@ -1,6 +1,15 @@
 <div class="card-container">
-  <div>
+  <div class="card-image">
     <%= link_to image_tag('https://b3h2.scene7.com/is/image/BedBathandBeyond/77169645928338p?$690$&wid=690&hei=690') %>
+  </div>
+  <div class="card-game-info">
+    <strong>Name:</strong>
+    <%= @game.name %>
+    <%= @game.description %>
+    <%= @game.category %>
+    <%= @game.min_players %> '-' <%= @game.max_players %>
+    <%= 'Availability:' %> <% @game.rented %>
+    <%= 'Price:' %> <%= @game.price %>
   </div>
   
 
