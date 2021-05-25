@@ -12,7 +12,7 @@ class RentalsController < ApplicationController
 
   def create
     @rental = Rental.new(rental_params)
-    @bookmark.list = @list
+    @rental.games = @games
     if @rental.save
       redirect_to game_path(@game)
     else
@@ -22,7 +22,7 @@ class RentalsController < ApplicationController
 
   def destroy
     @rental.destroy
-    redirect_to game_path(@rental.list)
+    redirect_to game_path(@rental.games)
   end
 
   private
