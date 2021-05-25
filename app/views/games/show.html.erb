@@ -1,24 +1,41 @@
-<div class="card-container">
+<div class="card-game">
   <div class="card-image">
     <%= link_to image_tag('https://b3h2.scene7.com/is/image/BedBathandBeyond/77169645928338p?$690$&wid=690&hei=690') %>
   </div>
   <div class="card-game-info">
-    <strong>Name:</strong>
-    <%= @game.name %>
-    <%= @game.description %>
-    <%= @game.category %>
-    <%= @game.min_players %> '-' <%= @game.max_players %>
-    <%= 'Availability:' %> <% @game.rented %>
-    <%= 'Price:' %> <%= @game.price %>
+    <div>
+        <h1><strong>Name: </strong><%= @game.name %></h1>
+        <p><%= @game.description %></p>
+    </div>
+    <div>
+      <p><strong>Category: </strong>
+      <%= @game.category %></p>
+      <p><strong>Players: </strong>  
+      <%= @game.min_players %> - <%= @game.max_players %></p>
+    </div>
+    <div>
+      <p><strong>Availability: </strong>
+      <% if @game.rented %>
+        available
+      <% else %>
+        available on: (date)
+      <% end %></p> 
+      </p>
+      <div>
+        <p><strong>Price: €</strong><%= @game.price %></p>
+      </div>
+    </div>
   </div>
-  
-
 </div>
 
-<%# "name"
-    "description"
-    "type"
-    "min_players"
-    "max_players"
-    "rented"
-    "price" %>
+<%# <div class="card-trip">
+  <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+  <div class="card-trip-infos">
+    <div>
+      <h2>Title here</h2>
+      <p>Short description here!</p>
+    </div>
+    <h2 class="card-trip-pricing">£99.99</h2>
+    <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+  </div>
+</div> %>
