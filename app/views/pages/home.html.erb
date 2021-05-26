@@ -1,2 +1,16 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1586685984116-94cca153e792?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80);">
+  <div class="container">
+    <h1>Game.Changer</h1>
+    <p>Find boardgames for rent in your neighborhood
+    <%= link_to "Learn More", {controller: "games", action: "index"}, class: "btngreen" %></p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="reviews">
+  <h5><em>"The best boardgame exchange in history"</em> ⭐️⭐️⭐️⭐️⭐️ - The New York Times</h5>
+  <h5><em>"I am speechless, this is just..."</em>⭐️⭐️⭐️⭐️⭐️ - Elon Musk</h5>
+  <h5><em>"Just when you thought that it couldn't get better"</em>⭐️⭐️⭐️⭐️⭐️ - Mr. GameAlot</h5>
+  <div class="reviews">
+</div>
+
