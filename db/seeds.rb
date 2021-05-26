@@ -15,29 +15,29 @@ barney = User.create(email: "barney@barney.com", password: "barney123", location
 jal = User.create(email: "jal@jal.com", password: "jal123", location: "Berlin", username: "jal")
 julian = User.create(email: "julian@julian.com", password: "julian123", location: "Berlin", username: "julian")
 
-file = URI.open('https://giantbomb1.cbsistatic.com/uploads/original/9/99864/2419866-nes_console_set.png')
+file = URI.open('https://upload.wikimedia.org/wikipedia/en/3/36/Pandemic_game.jpg')
 game_1 = Game.new(name: "Pandemic", description: "In Pandemic, several virulent diseases have broken out simultaneously all over the world! The players are disease-fighting specialists whose mission is to treat disease hotspots while researching cures for each of four plagues before they get out of hand.", category: "Strategy", user: claudiu, min_players: 2, max_players: 6, price: 2, rented: false)
 game_1.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
 game_1.save!
 
 image_2 = URI.open('https://cdn.shopify.com/s/files/1/0513/4077/1515/products/viticulture-essential-edition-board-game.jpg')
 game_2 = Game.new(name: "Viticulture: Essential Edition", description: "Viticulture is a worker-placement game set in the foothills of Tuscany. The Essential Edition includes the second edition of Viticulture along with several elements from the original Tuscany expansion pack, hand-picked by famed designer Uwe Rosenberg.", category: "Learning", user: claudiu, min_players: 2, max_players: 6, price: 2, rented: false)
-game_2.photo.attach(io: game_2, filename: 'nes.png', content_type: 'image/png')
+game_2.photo.attach(io: image_2, filename: 'nes.png', content_type: 'image/png')
 game_2.save
 
-image_3 = URI.open('https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1559254183527-61HYBjXXnEL.jpg')
-Game.new(name: "Ticket To Ride", description: "Ticket to Ride is a cross-country train adventure game. Players collect train cards that enable them to claim railway routes connecting cities throughout North America.", category: "Strategy", user: claudiu, min_players: 2, max_players: 6, price: 2, rented: false)
-game_3.photo.attach(io: game_3, filename: 'nes.png', content_type: 'image/png')
+image_3 = URI.open('https://cf.geekdo-images.com/0K1AOciqlMVUWFPLTJSiww__opengraph/img/yIW1EWLznW0SOA0-NkfIKz4Kj5w=/fit-in/1200x630/filters:strip_icc()/pic66668.jpg')
+game_3 = Game.new(name: "Ticket To Ride", description: "Ticket to Ride is a cross-country train adventure game. Players collect train cards that enable them to claim railway routes connecting cities throughout North America.", category: "Strategy", user: claudiu, min_players: 2, max_players: 6, price: 2, rented: false)
+game_3.photo.attach(io: image_3, filename: 'nes.png', content_type: 'image/png')
 game_3.save
 
-image_4 = URI.open('https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1559258092947-61SvciVJLlL.jpg')
-Game.new(name: "Dixit", description: "Dixit is a lovingly illustrated game of creative guesswork, where your imagination unlocks the tale!", category: "Strategy", user: claudiu, min_players: 2, max_players: 6, price: 2, rented: false)
-game_4.photo.attach(io: game_4, filename: 'nes.png', content_type: 'image/png')
+image_4 = URI.open('https://cf.geekdo-images.com/uSgzS-SClISqDkYRCdUq6g__opengraph_left/img/0rqZE18P3YEExg6_V7GpIjLS7Bk=/fit-in/445x445/filters:strip_icc()/pic3483909.jpg')
+game_4 = Game.new(name: "Dixit", description: "Dixit is a lovingly illustrated game of creative guesswork, where your imagination unlocks the tale!", category: "Strategy", user: claudiu, min_players: 2, max_players: 6, price: 2, rented: false)
+game_4.photo.attach(io: image_4, filename: 'nes.png', content_type: 'image/png')
 game_4.save
 
-image_4 = URI.open('https://cdn11.bigcommerce.com/s-ua4dd/images/stencil/1280x1280/products/45536/99617/bezsub2__84366.1615254860.jpg')
-Game.new(name: "Suburbia", description: "Plan, build, and develop a small town into a major metropolis.", category: "Strategy", user: claudiu, min_players: 2, max_players: 6, price: 2, rented: false)
-game_5.photo.attach(io: game_5, filename: 'nes.png', content_type: 'image/png')
+image_5 = URI.open('https://cf.geekdo-images.com/1YcHesB7LRvCF8i9vgH7qw__opengraph_left/img/YnkZfTIasR-pwXIn4Sbsjzm0kzE=/fit-in/445x445/filters:strip_icc()/pic6009608.png')
+game_5 = Game.new(name: "Suburbia", description: "Plan, build, and develop a small town into a major metropolis.", category: "Strategy", user: claudiu, min_players: 2, max_players: 6, price: 2, rented: false)
+game_5.photo.attach(io: image_5, filename: 'nes.png', content_type: 'image/png')
 game_5.save
 # Game.create(name: "Viticulture: Essential Edition", description: "Viticulture is a worker-placement game set in the foothills of Tuscany. The Essential Edition includes the second edition of Viticulture along with several elements from the original Tuscany expansion pack, hand-picked by famed designer Uwe Rosenberg.", category: "Learning", user: claudiu, min_players: 2, max_players: 6, price: 2, rented: false)
 # Game.create(name: "Ticket To Ride", description: "Ticket to Ride is a cross-country train adventure game. Players collect train cards that enable them to claim railway routes connecting cities throughout North America.", category: "Strategy", user: claudiu, min_players: 2, max_players: 6, price: 2, rented: false)
