@@ -1,8 +1,8 @@
 <div class="cards">
   <div class="card-container">
-    <!-- <img src="https://cf.geekdo-images.com/WzNs1mA_o22ZWTR8fkLP2g__opengraph/img/nz91SEDlPjff3jX1a3q84kbqZAA=/fit-in/1200x630/filters:strip_icc()/pic3376065.jpg" alt="game">
-     -->
+
      <%= cl_image_tag @game.photo.key %>
+
     <div class="card-game-info">
         <h1><%= @game.name %></h1>
         <p class="card-description"><%= @game.description %></p>
@@ -26,4 +26,6 @@
     <%= render "rentals/rentalform" %>
   </div>
 </div>
+ <%= link_to 'back to games', games_path, :class => "btn btn-warning" %>
+
 
