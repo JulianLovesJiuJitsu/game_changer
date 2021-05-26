@@ -1,0 +1,75 @@
+.cards {
+  background-color: lightgrey;
+  display: grid;
+  flex-grow: 1;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  padding: 40px;
+}
+
+@media(max-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card-container {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.cards .card-container img {
+  height: 40vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-game-info {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.card-game-info h1 {
+  padding: 16px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.card-description {
+  text-align: center;
+  font-size: 14px;
+}
+.card-details {
+  padding: 16px;
+  font-size: 12px;
+}
+
+.card-category-players {
+  float: left;
+}
+
+.card-avail-price {
+  float: right;
+}
+
+// card user avatar
+// .cards-game-info .cards-user {
+//   position: absolute;
+//   right: 16px;
+//   top: -20px;
+//   width: 40px;
+// }

@@ -1,24 +1,27 @@
-<div class="card-container">
-  <div class="card-image">
-    <%= link_to image_tag('https://b3h2.scene7.com/is/image/BedBathandBeyond/77169645928338p?$690$&wid=690&hei=690') %>
+<div class="cards">
+  <div class="card-container">
+    <img src="https://cf.geekdo-images.com/WzNs1mA_o22ZWTR8fkLP2g__opengraph/img/nz91SEDlPjff3jX1a3q84kbqZAA=/fit-in/1200x630/filters:strip_icc()/pic3376065.jpg" alt="game">
+    <div class="card-game-info">
+        <h1><%= @game.name %></h1>
+        <p class="card-description"><%= @game.description %></p>
+      <div class="card-details">
+        <div class="card-category-players">
+          <p><strong>Category: </strong>
+          <%= @game.category %></p>
+          <p><strong>Players: </strong>
+          <%= @game.min_players %> - <%= @game.max_players %></p>
+        </div>
+        <div class="card-avail-price">
+        <%# availability if rented true then availability: date available %>
+          <p><strong>Availability: </strong>
+          <% @game.rented %>
+          <div>
+            <p><strong>Price: €</strong><%= @game.price %></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%= link_to 'rent', new_user_session_path, :class => "btn btn-warning" %>
   </div>
-  <div class="card-game-info">
-    <strong>Name:</strong>
-    <%= @game.name %>
-    <%= @game.description %>
-    <%= @game.category %>
-    <%= @game.min_players %> '-' <%= @game.max_players %>
-    <%= 'Availability:' %> <% @game.rented %>
-    <%= 'Price:' %> <%= @game.price %>
-  </div>
-
-
 </div>
 
-<%# "name"
-    "description"
-    "type"
-    "min_players"
-    "max_players"
-    "rented"
-    "price" %>
