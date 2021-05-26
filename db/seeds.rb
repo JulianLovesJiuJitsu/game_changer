@@ -2,11 +2,16 @@
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 #
 # Examples:
+Rental.destroy_all
+Game.destroy_all
 User.destroy_all
 
-claudiu = User.create!(email: "claudiu@claudiu.com", password: "password", location: "Berlin", username: "claudiu")
+claudiu = User.create!(email: "claudiu@claudiu.com", password: "claudiu123", location: "Berlin", username: "claudiu")
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+barney = User.create(email: "barney@barney.com", password: "barney123", location: "Berlin", username: "barney")
+jal = User.create(email: "jal@jal.com", password: "jal123", location: "Berlin", username: "jal")
+julian = User.create(email: "julian@julian.com", password: "julian123", location: "Berlin", username: "julian")
 
 Game.create!(name: "7 Wonders Duel", description: "7 Wonders Duel is a fast-paced, two-player edition of Antoine Bauza's award-winning civilization-building game.", category: "Strategy",user: claudiu, min_players: 2, max_players: 6, price: 2, rented: false)
 Game.create(name: "Pandemic", description: "In Pandemic, several virulent diseases have broken out simultaneously all over the world! The players are disease-fighting specialists whose mission is to treat disease hotspots while researching cures for each of four plagues before they get out of hand.", category: "Strategy", user: claudiu, min_players: 2, max_players: 6, price: 2, rented: false)

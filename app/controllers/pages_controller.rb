@@ -5,12 +5,7 @@ class PagesController < ApplicationController
   end
 
   def dashboard
+    @rentals = Rental.all
     #@rentals = Rental where user_id matches blabla
   end
-
-  def new
-  end
-
-  def create
-
 end
