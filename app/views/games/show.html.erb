@@ -1,6 +1,6 @@
 <div class="cards">
   <div class="card-container">
-    <img src="https://cf.geekdo-images.com/WzNs1mA_o22ZWTR8fkLP2g__opengraph/img/nz91SEDlPjff3jX1a3q84kbqZAA=/fit-in/1200x630/filters:strip_icc()/pic3376065.jpg" alt="game">
+    <img src="https://source.unsplash.com/random/">
     <div class="card-game-info">
         <h1><%= @game.name %></h1>
         <p class="card-description"><%= @game.description %></p>
@@ -24,6 +24,8 @@
     <%= link_to 'rent', new_user_session_path, :class => "btn btn-warning" %>
   </div>
 </div>
+ <%= link_to 'back to games', games_path, :class => "btn btn-warning" %>
+
 
 <%# <div class="card-trip">
   <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
