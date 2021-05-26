@@ -3,4 +3,9 @@ class PagesController < ApplicationController
 
   def home
   end
+
+  def dashboard
+    @rentals = Rental.all
+    #@rentals = Rental where user_id matches blabla
+  end
 end

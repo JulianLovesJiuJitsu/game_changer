@@ -1,0 +1,6 @@
+<div class="container">
+  <h3>My Rentals:</h3>
+  <% @rentals.each do |r| %>
+  <p>You have rented <strong><%= r.game.name %></strong> from <%= r.start_date %> until <%= r.end_date %></p>
+  <% end %>
+</div>
