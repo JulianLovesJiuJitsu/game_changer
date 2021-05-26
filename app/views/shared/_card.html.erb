@@ -1,0 +1,23 @@
+<div class="card-container card-container-show">
+  <img src="https://source.unsplash.com/random/">
+  <div class="card-game-info">
+      <h1><%= @game.name %></h1>
+      <p class="card-description"><%= @game.description %></p>
+    <div class="card-details">
+      <div class="card-category-players">
+        <p><strong>Category: </strong>
+        <%= @game.category %></p>
+        <p><strong>Players: </strong>
+        <%= @game.min_players %> - <%= @game.max_players %></p>
+      </div>
+      <div class="card-avail-price">
+      <%# availability if rented true then availability: date available %>
+        <p><strong>Availability: </strong>
+        <% @game.rented %>
+        <div>
+          <p><strong>Price: €</strong><%= @game.price %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
