@@ -1,12 +1,32 @@
 // Specific CSS for your home-page
 body {
-  background-color: #B5DFF0;
+  font-family: Poppins;
+  background: linear-gradient(to bottom, #4869C1 0%, #FF99CC 100%);
 }
 
+.navbar-home {
+  display: flex;
+  width: 80%;
+  height: 60px;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px auto;
+}
 
-.reviews {
-  color: black;
-  padding: 40px;
-  text-align: center;
-  line-height: 40px;
+.navSectionLeftRight {
+  display: flex;
+  width: 25%;
+  justify-content: center;
+}
+
+.navSectionCenter {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.navSectionCenter h4 {
+  font-size: 20px;
 }

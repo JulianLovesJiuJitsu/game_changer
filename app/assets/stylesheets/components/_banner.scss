@@ -1,7 +1,11 @@
 .banner {
+  margin: 20px auto;
+  width: 80%;
   background-size: cover;
   background-position: center;
   padding: 150px 0;
+  opacity: 80%;
+  border-radius: 20px;
 }
 
 .banner h1 {
@@ -22,3 +26,5 @@
 .banner a {
   text-decoration: none
 }
+
+
