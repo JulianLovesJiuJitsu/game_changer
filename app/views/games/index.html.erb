@@ -1,10 +1,11 @@
-<div class="container">
-  <h1>See all the games here</h1>
-  <ul>
-    <% @games.each do |game| %>
-    <li>
-      <p> <%= link_to game.name, game_path(game) %><%= link_to "rent", new_user_session_path, :class => "btn btn-warning" %> </p>
-    </li>
-    <% end %>
-  </ul>
+<div class="cards">
+  <% @games.each do |game| %>
+    <div class="card-container btn btn-warning">
+      <img src="https://source.unsplash.com/random/" alt="random image">
+      <div class="card-game-info">
+        <h1><%= game.name %></h1>
+      </div>
+      <%= link_to "view", game_path(game), :class => "btn btn-warning" %> </p>
+    </div>
+  <% end %>
 </div>
