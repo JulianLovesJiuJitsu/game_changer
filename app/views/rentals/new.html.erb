@@ -1,0 +1,10 @@
+<h1>create a new rental</h1>
+
+<%= simple_form_for(@rentals) do |f| %>
+  <%= f.input :user_id %>
+  <%= f.input :game_id, collection: Game::name %>
+
+  <%= f.input :start_date %>
+  <%= f.input :end_date %>
+  <%= f.submit %>
+<% end %>
