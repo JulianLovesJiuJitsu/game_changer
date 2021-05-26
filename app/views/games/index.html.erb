@@ -1,11 +1,10 @@
 <div class="cards">
   <% @games.each do |game| %>
-    <div class="card-container btn btn-warning">
-      <img src="https://source.unsplash.com/random/" alt="random image">
+    <div class="card-container ">
+      <%= link_to image_tag("https://source.unsplash.com/random/", alt: "random image"), game_path(game) %>
       <div class="card-game-info">
         <h1><%= game.name %></h1>
       </div>
-      <%= link_to "view", game_path(game), :class => "btn btn-warning" %> </p>
     </div>
   <% end %>
 </div>
