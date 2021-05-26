@@ -10,4 +10,6 @@ class Game < ApplicationRecord
   validates :price, numericality: true
 
   validates :category, inclusion: { in: %w(Strategy Cards Kids Economy RPG Cooperative) }
+
+  has_one_attached :photo
 end
