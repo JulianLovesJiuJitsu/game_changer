@@ -1,6 +1,7 @@
 <div class="cards">
   <div class="card-container card-container-show">
-    <img src="https://source.unsplash.com/random/">
+  <div class="card-container">
+     <%= cl_image_tag @game.photo.key %>
     <div class="card-game-info">
         <h1><%= @game.name %></h1>
         <p class="card-description"><%= @game.description %></p>

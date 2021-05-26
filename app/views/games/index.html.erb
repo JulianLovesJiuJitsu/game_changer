@@ -2,7 +2,7 @@
   <% @games.each do |game| %>
   <%= link_to game_path(game) do %>
       <div class="card-container">
-          <%= image_tag("https://source.unsplash.com/random/", alt: "random image") %>
+          <%= cl_image_tag game.photo.key %>
           <div class="card-game-info">
             <h1 class="card-name"><%= game.name %></h1>
           </div>

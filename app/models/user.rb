@@ -5,4 +5,6 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   has_many :games, through: :rentals
+
+  has_one_attached :photo
 end
