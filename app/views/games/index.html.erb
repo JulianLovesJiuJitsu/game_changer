@@ -2,10 +2,12 @@
   <% @games.each do |game| %>
   <%= link_to game_path(game) do %>
       <div class="card-container">
+        <% if game.photo.attached? %>
           <%= cl_image_tag game.photo.key %>
           <div class="card-game-info">
             <h1 class="card-name"><%= game.name %></h1>
           </div>
+        <% end %>
       </div>
       <% end %>
   <% end %>
