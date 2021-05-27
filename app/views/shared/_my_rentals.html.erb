@@ -1,0 +1,16 @@
+<% @rentals.each do |rental| %>
+  <div class="notification">
+    <%= cl_image_tag rental.game.photo.key, class: "avatar-large" %>
+    <!-- <img src='https://kitt.lewagon.com/placeholder/users/arthur-littm' class="avatar-large" /> -->
+    <div class="notification-content">
+      <p> <%= rental.game.name %> </p>
+      <p><small><%= rental.start_date %> | <%= rental.end_date %> <!-- Rented from <%= rental.game.user.username %> --> </small></p>
+      <!-- <p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipisicing elit.</p> -->
+    </div>
+
+    <div class="notification-actions">
+      <a href="#">Edit <i class="fas fa-pencil-alt"></i></a>
+      <a href="#">Delete <i class="far fa-trash-alt"></i></a>
+    </div>
+  </div>
+<% end %>

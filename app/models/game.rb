@@ -1,7 +1,9 @@
 class Game < ApplicationRecord
   belongs_to :user
 
-  has_many :users, through: :rentals
+  has_many :users
+  has_many :rentals
+
 
   validates :name, :description, :category, presence: true
 
