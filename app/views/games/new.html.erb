@@ -6,17 +6,21 @@
     <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
     <div class="form-inputs">
-      <%= f.input :name %>
-      <%= f.input :description %>
-      <%= f.input :category %>
-      <%= f.input :min_players %>
-      <%= f.input :max_players %>
-      <%= f.input :price %>
+        <%= f.input :name, label: "🤷", placeholder: "Type in the name of your game, e.g. 'Jumanji'", input_html: { class: "formtest" } %>
+      <div class="inline">
+        <%= f.input :category, placeholder: 'Choose Category', collection: Game::CATEGORY %>
+        <%= f.input :min_players, placeholder: "Least amount of players" %>
+        <%= f.input :max_players, placeholder: "Max amount of players" %>
+        <%= f.input :price, label: "Price", placeholder: "How much should it cost to rent this game per day" %>
+      </div>
+      <%= f.input :description, placeholder: "Describe the game (optional)", wrapper: :inline_form, html: { class: 'form-inline' } %>
+      <%= f.input :location, placeholder: "Where are you located?" %>
       <%= f.input :photo, as: :file %>
+
     </div>
 
     <div class="form-actions">
-      <%= f.button :submit %>
+      <%= f.button :submit, class: "btn-black" %>
     </div>
   <% end %>
 </div>
