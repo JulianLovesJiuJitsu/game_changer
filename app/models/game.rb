@@ -9,7 +9,7 @@ class Game < ApplicationRecord
 
   validates :price, numericality: true
 
-  CATEGORY = ['Strategy', 'Cards', 'Kids', 'Economy', 'RPG', 'Cooperative Other']
+  CATEGORY = ['Strategy', 'Cards', 'Kids', 'Economy', 'RPG', 'Cooperative', 'Other']
 
   validates :category, inclusion: { in: CATEGORY }
 
