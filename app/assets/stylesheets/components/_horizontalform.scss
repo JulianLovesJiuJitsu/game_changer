@@ -11,18 +11,19 @@
   margin: 0 auto;
   box-shadow: rgba(0,0,0,.172549) 0 6px 12px 0;
   cursor: pointer;
+  margin-top: 64px;
 }
 
 .search-element {
   display: flex;
   flex-grow: 2;
   flex-direction: column;
-  border-right: 1px solid rgba(10,10,10,.1);
-  padding: 1em;
+  padding: 16px 48px;
 }
 
 .search-label {
-  font-weight: 700;
+  font-weight: 600;
+  margin-bottom: 0;
 }
 
 .search-input {
@@ -40,24 +41,36 @@
 }
 
 .search-button {
-  display: inline-block;
-  flex-grow: 1;
-  height: 100px;
-  line-height: 80px;
-  padding: 0 2em;
-  text-align: center;
-  font-size: 1.2em;
-  font-weight: 100;
-  border: 0;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 72px;
+  width: 72px;
+  font-size: 16px;
+  border-radius: 50%;
   color: white;
-  background-color: black;
-  transition: background-color 0.8s ease;
+  background-color: #222;
+  margin-right: 8px;
+}
+
+a:hover {
+  color: #fff;
 }
 
 .search-button:hover {
-  background-color: HSLA(345, 100%, 60%, 1.00);
+  background-color: #444;
+}
+
+.search-input {
+  font-size: 16px;
+  color: #777;
+}
+
+.feather-map-pin {
+  margin-right: 16px;
+  color: red;
+}
+
+.game-search {
+  width: 520px;
 }
