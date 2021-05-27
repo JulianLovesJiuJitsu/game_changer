@@ -1,8 +1,8 @@
 <div class="centerform">
   <h3 class="ml15">
-    <span class="word">SHARE</span>
-    <span class="word">YOUR</span>
-    <span class="word">BOARDGAME!</span>
+    <span class="word orangeshadow">SHARE</span>
+    <span class="word greenshadow">YOUR</span>
+    <span class="word pinkshadow">BOARDGAME!</span>
   </h3>
 
 
@@ -13,15 +13,15 @@
 
     <div class="form-inputs">
       <div class= "inline">
-        <%= f.input :name, label: "Name", placeholder: "e.g. 'Jumanji'", input_html: { class: "inputfield" } %>
-        <%= f.input :category, style: 'display: inline;', prompt: "- Select genre -", collection: Game::CATEGORY, input_html: { class: 'inputfield' } %>
-        <%= f.input :min_players, label: "Players min", placeholder: "2", input_html: { class: 'inputfield playercount' } %>
-        <%= f.input :max_players, label: "max", placeholder: "5", input_html: { class: 'inputfield playercount' } %>
+        <%= f.input :name, label: "Name", placeholder: "e.g. 'Jumanji'", input_html: { class: "inputfield border-orange" } %>
+        <%= f.input :category, style: 'display: inline;', prompt: "- Select genre -", collection: Game::CATEGORY, input_html: { class: 'inputfield border-lime' } %>
+        <%= f.input :min_players, label: "Players min", placeholder: "2", input_html: { class: 'inputfield playercount border-pink' } %>
+        <%= f.input :max_players, label: "max", placeholder: "5", input_html: { class: 'inputfield playercount border-blue' } %>
       </div>
-        <%= f.input :description, placeholder: "Describe the game (optional)", input_html: { class: 'inputfield .description' } %>
+        <%= f.input :description, placeholder: "Describe the game (optional)", input_html: { class: 'inputfield desciption border-lime' } %>
       <div class="inline">
-        <%= f.input :price, label: "Price per day", placeholder: "You decide!", input_html: { class: 'inputfield' } %>
-      <%= f.input :location, placeholder: "Where are you?", input_html: { class: 'inputfield' } %>
+        <%= f.input :price, label: "Price per day", placeholder: "You decide!", input_html: { class: 'inputfield border-orange' } %>
+      <%= f.input :location, placeholder: "Where are you?", input_html: { class: 'inputfield border-blue' } %>
 
       <label class="upload-button">
       Upload photo
