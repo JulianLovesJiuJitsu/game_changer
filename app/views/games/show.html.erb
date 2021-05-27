@@ -2,6 +2,8 @@
   <div class="game-show-image">
     <%= cl_image_tag @game.photo.key %>
   </div>
+</div>
+<%= link_to 'back to games', games_path, :class => "btn btn-warning" %>
   <div class="game-show-description">
     <h1><%= @game.name %></h1>
     <p><%= @game.description %></p>

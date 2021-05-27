@@ -19,7 +19,7 @@ class GamesController < ApplicationController
     @game.user = User.first
 
     if @game.save
-      redirect_to game_path(@game)
+      redirect_to my_games_path(@game)
     else
       render :new
     end
