@@ -5,6 +5,25 @@ a:active {
   text-decoration: none;
 }
 
+.infocard-container {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  justify-items: center;
+}
+
+.info-image {
+  width: 50%;
+}
+
+
+.card-text {
+  padding-left: 60px;
+  padding-right: 100px;
+  background: white;
+  width: 50%;
+}
+
 .cards {
   background-color: lightgrey;
   display: grid;
@@ -79,6 +98,12 @@ a:active {
 .card-avail-price {
   float: right;
 }
+
+.info {
+  display: flex;
+  width:80%;
+}
+
 
 // card user avatar
 // .cards-game-info .cards-user {
