@@ -1,0 +1,36 @@
+.game-show-container {
+  width: 100vw;
+  height: 580px;
+  display: flex;
+}
+
+.game-show-image {
+  width: 40%;
+  height: 100%;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+}
+
+.game-show-description {
+  width: 40%;
+  height: 100%;
+  padding: 12px;
+
+  p {
+    margin: 8px 0;
+  }
+}
+
+.calender {
+  padding: 12px;
+  width: 20%;
+  height: 100%;
+}
