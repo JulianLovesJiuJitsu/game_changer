@@ -1,15 +1,12 @@
 .banner {
-  margin: 20px auto;
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
-  opacity: 80%;
-  border-radius: 20px;
+  padding: 120px 0;
 }
 
 .banner-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .banner h1 {
@@ -28,6 +25,10 @@
 
 .banner a {
   text-decoration: none
+}
+
+.banner-text {
+  width: 400px;
 }
 
 
