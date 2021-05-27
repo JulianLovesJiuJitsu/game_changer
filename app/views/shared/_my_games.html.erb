@@ -1,0 +1,15 @@
+<% @games.each do |game| %>
+  <div class="notification">
+    <%= cl_image_tag game.photo.key, class: "avatar-large" %>
+    <!-- <img src='https://kitt.lewagon.com/placeholder/users/arthur-littm' class="avatar-large" /> -->
+    <div class="notification-content">
+      <p> <%= game.name %> </p>
+      <p><small><%= game.description %> </small></p>
+    </div>
+
+    <div class="notification-actions">
+      <a href="#">Edit <i class="fas fa-pencil-alt"></i></a>
+      <a href="#">Delete <i class="far fa-trash-alt"></i></a>
+    </div>
+  </div>
+<% end %>

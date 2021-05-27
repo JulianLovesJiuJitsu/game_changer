@@ -6,11 +6,12 @@ Rails.application.routes.draw do
     resources :rentals, only: [:new, :create, :show]
   end
 
-  resources :rentals, only: [:index, :destroy]
+  resources :rentals, only: [:destroy]
 
   resources :games, only: [:index, :show, :new, :create]
 
-  get 'dashboard', to: "pages#dashboard"
+  get 'my_rentals', to: "pages#my_rentals"
+  get 'my_games', to: "pages#my_games"
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
