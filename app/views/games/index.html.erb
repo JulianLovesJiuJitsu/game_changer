@@ -4,9 +4,17 @@
     <%= link_to game_path(game) do %>
         <div class="card-container">
           <% if game.photo.attached? %>
+          <div class="card-index-image">
             <%= cl_image_tag game.photo.key %>
-            <div class="card-game-info">
+          </div>
+            <div class="card-index-info">
               <h1 class="card-name"><%= game.name %></h1>
+              <p><%= game.description %></p>
+              <p class="card-index-category"><strong>Category: </strong><%= game.category %></p>
+              <p class="card-index-players"><i class="fas fa-user-friends"></i> <%= game.min_players %> - <%= game.max_players %></p>
+              <p class="card-index-avail"><strong>Availability: </strong><i class="far fa-check-square" style= "color:green"></i> <i class="far fa-times-circle" style="color:red"></i><% game.rented %></p>
+              <h2 class="card-index-price"><strong>€</strong><%= game.price %></p>
+              <p class="card-index-location"><strong>Location: </strong><%= game.location %></p>
             </div>
           <% end %>
         </div>
