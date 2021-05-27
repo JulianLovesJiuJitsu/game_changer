@@ -1,30 +1,19 @@
-<div class="cards">
-  <div class="card-container card-container-show">
-  <div class="card-container">
-     <%= cl_image_tag @game.photo.key %>
-    <div class="card-game-info">
-        <h1><%= @game.name %></h1>
-        <p class="card-description"><%= @game.description %></p>
-      <div class="card-details">
-        <div class="card-category-players">
-          <p><strong>Category: </strong>
-          <%= @game.category %></p>
-          <p><strong>Players: </strong>
-          <%= @game.min_players %> - <%= @game.max_players %></p>
-        </div>
-        <div class="card-avail-price">
-        <%# availability if rented true then availability: date available %>
-          <p><strong>Availability: </strong>
-          <% @game.rented %>
-          <div>
-            <p><strong>Price: €</strong><%= @game.price %></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="calender-container">
-      <%= render "rentals/rentalform" %>
-    </div>
+<div class="game-show-container">
+  <div class="game-show-image">
+    <%= cl_image_tag @game.photo.key %>
   </div>
 </div>
 <%= link_to 'back to games', games_path, :class => "btn btn-warning" %>
+  <div class="game-show-description">
+    <h1><%= @game.name %></h1>
+    <p><%= @game.description %></p>
+    <p><strong>Category: </strong><%= @game.category %></p>
+    <p><strong>Players: </strong><%= @game.min_players %> - <%= @game.max_players %></p>
+    <p><strong>Availability: </strong><% @game.rented %></p>
+    <p><strong>Price: €</strong><%= @game.price %></p>
+    <p><strong>Location: </strong><%= @game.location %></p>
+  </div>
+  <div class="calender">
+    <%= render "rentals/rentalform" %>
+  </div>
+</div>
