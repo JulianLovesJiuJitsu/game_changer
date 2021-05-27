@@ -15,8 +15,20 @@
   margin-top: 20px;
   position: relative;
   left: 270px;
+  text-decoration: none;
 }
 
 a {
   text-decoration: none
+}
+
+.btn-black {
+  color: white;
+  font-weight: bold;
+  background-color: black;
+  border-radius: 80px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
