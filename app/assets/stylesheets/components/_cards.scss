@@ -25,7 +25,8 @@ a:active {
 }
 
 .cards {
-  background-color: lightgrey;
+  // background-color: #a1dbfc;
+  background: linear-gradient(to bottom, #4869C1 0%, #ff99cc 100%);
   display: grid;
   flex-grow: 1;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -47,16 +48,16 @@ a:active {
 
 .card-container {
   overflow: hidden;
-  background: white;
+  // background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  margin: 20px;
   border-radius: 5px;
 }
 
 .cards .card-container img {
-  height: 40vh;
+  height: 50vh;
   width: 100%;
   object-fit: cover;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .calender-container {
@@ -67,15 +68,14 @@ a:active {
 
 .card-game-info {
   overflow: hidden;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  margin: 20px;
+  background: #FDED76;
   border-radius: 5px;
   color:black;
 }
 
 .card-game-info h1 {
   padding: 16px;
+  margin: 0;
   text-align: center;
   font-size: 24px;
   font-weight: bold;
