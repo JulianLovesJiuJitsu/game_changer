@@ -1,6 +1,6 @@
 <% @rentals.each do |rental| %>
   <div class="notification">
-    <%= cl_image_tag rental.game.photo.key, class: "avatar-large" %>
+    <%= cl_image_tag rental.game.photo.key, class: "rental-avatar" %>
     <!-- <img src='https://kitt.lewagon.com/placeholder/users/arthur-littm' class="avatar-large" /> -->
     <div class="notification-content">
       <p> <%= rental.game.name %> </p>
