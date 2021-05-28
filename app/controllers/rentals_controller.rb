@@ -16,7 +16,7 @@ class RentalsController < ApplicationController
     @rental.game = @game
     @rental.user = current_user
     if @rental.save
-      redirect_to my_rentals_path, notice: "Congratulations! you booked #{@game.name}"
+      redirect_to my_rentals_path, notice: "Congratulations! you booked #{@game.name}. An email has been sent to your inbox"
     else
       render :new
     end

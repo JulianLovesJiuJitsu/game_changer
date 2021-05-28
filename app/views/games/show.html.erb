@@ -14,10 +14,10 @@
       </div>
       <p><%= @game.description %></p>
       <div class="game-info mt-1">
-        <p><strong>Category:</strong><%= @game.category %></p>
+        <p><strong><i class="fas fa-play-circle mr-3"></i></strong><%= @game.category %></p>
         <p><strong><i class="fas fa-user-friends mr-3"></i></strong><%= @game.min_players %> - <%= @game.max_players %></p>
-        <p><strong>€ </strong><%= @game.price %></p>
-        <p><strong>Location: </strong><%= @game.location %></p>
+        <p><strong><i class="fas fa-euro-sign mr-3"></i> </strong><%= @game.price %></p>
+        <p><strong><i class="fas fa-map-pin mr-3"></i> </strong><%= @game.location %></p>
       </div>
     </div>
   </div>
@@ -27,31 +27,11 @@
     </div>
   </div>
     </div>
-    
+
 </div>
-  
 
-
-  
-  <% if false %>
-      <div class="game-show-image">
-    <%= cl_image_tag @game.photo.key %>
-  </div>
-
-  <div class="game-show-description">
-    <h1><%= @game.name %></h1>
-    <p><%= @game.description %></p>
-    <p><strong>Category: </strong><%= @game.category %></p>
-    <p><strong>Players: </strong><%= @game.min_players %> - <%= @game.max_players %></p>
-    <p><strong>Availability: </strong><% @game.rented %></p>
-    <p><strong>Price: €</strong><%= @game.price %></p>
-    <p><strong>Location: </strong><%= @game.location %></p>
-    <%= render "rentals/rentalform" %>
-  </div>
-  <% end %>
-  
 
   <%# <div class="calender">
-    
+
   </div> %>
 </div>

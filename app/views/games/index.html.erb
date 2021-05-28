@@ -1,3 +1,4 @@
+<!-- <div class="container"> -->
 <div class="cards">
   <% @games.each do |game| %>
   <% if game.rentals.empty? %>
@@ -10,12 +11,13 @@
               <div class="card-index-info">
                 <p class="card-index-players"><i class="fas fa-user-friends"></i> <%= game.min_players %> - <%= game.max_players %></p>
                 <p class="card-index-location"><i class="fas fa-flag"></i> <%= game.location %></p>
-              
+
               </div>
-            </div> 
+            </div>
           <% end %>
         </div>
         <% end %>
       <% end %>
   <% end %>
 </div>
+<!-- </div> -->
