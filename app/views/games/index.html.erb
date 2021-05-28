@@ -5,9 +5,14 @@
         <div class="card-container">
           <% if game.photo.attached? %>
             <%= cl_image_tag game.photo.key %>
-            <div class="card-game-info">
+            <div class="card-info">
               <h1 class="card-name"><%= game.name %></h1>
-            </div>
+              <div class="card-index-info">
+                <p class="card-index-players"><i class="fas fa-user-friends"></i> <%= game.min_players %> - <%= game.max_players %></p>
+                <p class="card-index-location"><i class="fas fa-flag"></i> Berlin <%= game.location %></p>
+                <p class="card-index-avail"><i class="far fa-check-square" style= "color:green"></i> <i class="far fa-times-circle" style="color:red"></i><strong></strong><% game.rented %></p>
+              </div>
+            </div> 
           <% end %>
         </div>
         <% end %>
