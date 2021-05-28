@@ -23,17 +23,17 @@
 
 .search-label {
   font-weight: 600;
-  margin-bottom: 0;
+  margin-bottom: 8px;
 }
 
 .search-input {
+  margin-left: 24px;
   border: none;
   appearance: none;
   outline: none;
   width: 100%;
   font-size: 0.7em;
   line-height: 0.7em;
-  margin-top: 5px;
 }
 
 .search-input:focus {
@@ -51,6 +51,7 @@
   color: white;
   background-color: #D94862;
   margin-right: 8px;
+  border: none;
 }
 
 a:hover {
