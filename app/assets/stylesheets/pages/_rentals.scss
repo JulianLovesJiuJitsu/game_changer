@@ -1,25 +1,41 @@
 .notification {
   display: flex;
+  justify-content: flex-start;
   align-items: center;
-  margin-bottom: 8px;
-  background: white;
-  padding: 8px 16px;
-  border: 1px solid rgb(235,235,235);
+  margin-bottom: 20px;
+  background-color: hsla(0, 0%, 100%, 0.4);
+  padding: 20px 16px;
+  border-radius: 8px
+}
+
+.rental-pic {
+  width: 120px;
+}
+
+.rentalsheader {
+  margin-top: 40px;
+}
+
+.rental-avatar {
+  width: 100px;
+  height: 100px;
 }
 
 .notification .notification-content {
   flex-grow: 1;
   padding: 0 24px;
+  width: 400px;
 }
 
 .notification p {
   margin: 0;
+  font-weight: 600;
   line-height: 1.4;
 }
 
 .notification small {
-  color: #999999;
-  font-weight: bold;
+  color: #000;
+  font-weight: light;
 }
 .notification .notification-actions {
   opacity: 0;
