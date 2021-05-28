@@ -1,28 +1,27 @@
 <div class="game-show-container">
   <div class="col-3">
     <div class="game-show-image">
-      <%= cl_image_tag @game.photo.key %>
+      <%= cl_image_tag @game.photo.key, crop: :fill %>
     </div>
   </div>
   <div class="col-9">
-    <div class="row mt-5 margin-left-100">
-      <div class="col-6 mt-5">
+    <div class="row">
+      <div class="col-8">
     <div class="game-show-description">
       <div class="game-name-username">
         <h1><%= @game.name %></h1>
         <h2>shared by <%= @game.user.username %></h2>
       </div>
       <p><%= @game.description %></p>
-      <div class="game-info mt-5">
-        <p><strong> </strong><%= @game.category %></p>
-        <p><strong>Players: </strong><%= @game.min_players %> - <%= @game.max_players %></p>
-        <p><strong>Availability: </strong><% @game.rented %></p>
-        <p><strong>Price: €</strong><%= @game.price %></p>
+      <div class="game-info mt-1">
+        <p><strong>Category:</strong><%= @game.category %></p>
+        <p><strong><i class="fas fa-user-friends mr-3"></i></strong><%= @game.min_players %> - <%= @game.max_players %></p>
+        <p><strong>€ </strong><%= @game.price %></p>
         <p><strong>Location: </strong><%= @game.location %></p>
       </div>
     </div>
   </div>
-  <div class="col-6 mt-5">
+  <div class="col-4 mt-5">
     <div class="calendar-rental">
       <%= render "rentals/rentalform" %>
     </div>
