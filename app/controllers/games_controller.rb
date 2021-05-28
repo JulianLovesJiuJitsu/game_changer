@@ -3,10 +3,12 @@ class GamesController < ApplicationController
 
   def index
     if params[:query].present?
-      @games = Game.search_by_location(params[:query])
+      @games = Game.search_by_name_and_location(params[:query])
     else
       @games = Game.all
     end
+
+
   end
 
   def show
