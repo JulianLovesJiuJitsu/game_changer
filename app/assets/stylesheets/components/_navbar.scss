@@ -15,6 +15,8 @@
 // }
 
 .nav-logo {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   font-size: 20px;
   font-weight: 600;
@@ -27,25 +29,32 @@
   color: #444;
 }
 
+.logo-img {
+  height: 40px;
+  width: 40px;
+  margin-right: 16px;
+}
+
 .nav-links a {
   margin: 0 24px;
   color: #222;
   font-size: 16px;
   border-bottom: 2px solid transparent;
   &:hover {
-    color: blue;
-    border-bottom: 2px solid blue;
+    color: #D94862;
+    
   }
 }
 
 .nav-item.nav-btn {
   color: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   padding: 12px 28px;
-  background-color: #222;
+  background-color: #D94862;
   font-size: 16px;
   border-radius: 40px;
   &:hover {
-    background-color: #444;
+    background-color: #c53a54;
   }
 }
 
@@ -56,7 +65,6 @@
     color: #fff;
   }
 }
-
 
 .dropdown-item {
   padding-top: 8px;

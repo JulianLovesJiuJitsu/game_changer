@@ -37,7 +37,7 @@
 }
 
 .search-input:focus {
-  box-shadow: 0px 2px 0px 0px tomato;
+  box-shadow: 0px 2px 0px 0px #D94862;
 }
 
 .search-button {
@@ -49,7 +49,7 @@
   font-size: 16px;
   border-radius: 50%;
   color: white;
-  background-color: #222;
+  background-color: #D94862;
   margin-right: 8px;
 }
 
@@ -58,7 +58,7 @@ a:hover {
 }
 
 .search-button:hover {
-  background-color: #444;
+  background-color: #c53a54;
 }
 
 .search-input {
@@ -68,7 +68,7 @@ a:hover {
 
 .feather-map-pin {
   margin-right: 16px;
-  color: red;
+  color: #D94862;
 }
 
 .game-search {
