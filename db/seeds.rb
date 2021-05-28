@@ -89,11 +89,6 @@ game_14 = Game.new(name: "Capital Punishment", location: "Berlin", description: 
 game_14.photo.attach(io: image_14, filename: 'nes.png', content_type: 'image/png')
 game_14.save
 
-image_15 = URI.open('https://comedy-intl.mtvnimages.com/uri/mgid:file:http:shared:uk.cc.prod-sites.vimn.com/sites/default/files/styles/image-w-760-scale/public/cc_uk/galleries/large/2016/09/19/bed_bugs.jpg?itok=Yp3MoHyn&quality=.7')
-game_15 = Game.new(name: "Bed Bugs", location: "Berlin", description: "Have you ever been bitten by a bed bug? It really isn't nice. They're larger-than-expected (Google at your own risk), flat insects that can smell when you're asleep - at which time they go for a little jaunt around your body, biting as they go along.", category: "Strategy", user: claudiu, min_players: 2, max_players: 6, price: 2, rented: false)
-game_15.photo.attach(io: image_15, filename: 'nes.png', content_type: 'image/png')
-game_15.save
-
 image_16 = URI.open('https://comedy-intl.mtvnimages.com/uri/mgid:file:http:shared:uk.cc.prod-sites.vimn.com/sites/default/files/styles/image-w-760-scale/public/cc_uk/galleries/large/2016/09/19/bed_bugs.jpg?itok=Yp3MoHyn&quality=.7')
 game_16 = Game.new(name: "Bed Bugs", location: "Berlin", description: "Have you ever been bitten by a bed bug? It really isn't nice. They're larger-than-expected (Google at your own risk), flat insects that can smell when you're asleep - at which time they go for a little jaunt around your body, biting as they go along.", category: "Strategy", user: claudiu, min_players: 2, max_players: 6, price: 2, rented: false)
 game_16.photo.attach(io: image_16, filename: 'nes.png', content_type: 'image/png')
@@ -160,7 +155,7 @@ game_28.photo.attach(io: image_28, filename: 'nes.png', content_type: 'image/png
 game_28.save
 
 image_29 = URI.open('https://cdn.vox-cdn.com/thumbor/Ws6dtMoSWNKFIgNsD5sVVvfvfpE=/0x0:3000x2017/1320x0/filters:focal(0x0:3000x2017):format(webp):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/22429071/chall_210405_ecl1083_0024.jpg')
-game_29 = Game.new(name: "Marvel Champions: The Card Game", location: "Berlin", description: "Marvel Champions: The Card Game allows a team of heroes to work together against a single villain. It’s a “Living Card Game,” which means you won’t be hunting and pecking for the right cards in random booster packs. You always know exactly what you’re going to get when you make a purchase, and subsequent expansions are guaranteed to be compatible with the original base game.", category: "Strategy", user: claudiu, min_players: 2, max_players: 6, price: 2, rented: false)
+game_29 = Game.new(name: "Marvel Champions", location: "Berlin", description: "Marvel Champions: The Card Game allows a team of heroes to work together against a single villain. It’s a “Living Card Game,” which means you won’t be hunting and pecking for the right cards in random booster packs. You always know exactly what you’re going to get when you make a purchase, and subsequent expansions are guaranteed to be compatible with the original base game.", category: "Strategy", user: claudiu, min_players: 2, max_players: 6, price: 2, rented: false)
 game_29.photo.attach(io: image_29, filename: 'nes.png', content_type: 'image/png')
 game_29.save
 
@@ -169,7 +164,7 @@ game_30 = Game.new(name: "Pandemic Legacy", location: "Berlin", description: "Pa
 game_30.photo.attach(io: image_30, filename: 'nes.png', content_type: 'image/png')
 game_30.save
 
-puts '30 seeds created'
+puts '29 seeds created'
 
 # Game.create(name: "Viticulture: Essential Edition", description: "Viticulture is a worker-placement game set in the foothills of Tuscany. The Essential Edition includes the second edition of Viticulture along with several elements from the original Tuscany expansion pack, hand-picked by famed designer Uwe Rosenberg.", category: "Learning", user: claudiu, min_players: 2, max_players: 6, price: 2, rented: false)
 # Game.create(name: "Ticket To Ride", description: "Ticket to Ride is a cross-country train adventure game. Players collect train cards that enable them to claim railway routes connecting cities throughout North America.", category: "Strategy", user: claudiu, min_players: 2, max_players: 6, price: 2, rented: false)
