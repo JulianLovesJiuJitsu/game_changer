@@ -15,16 +15,16 @@
       <div class= "inline">
         <%= f.input :name, label: "Name", placeholder: "e.g. 'Jumanji'", input_html: { class: "inputfield border-orange" } %>
         <%= f.input :category, style: 'display: inline;', prompt: "- Select genre -", collection: Game::CATEGORY, input_html: { class: 'inputfield border-lime' } %>
-        <%= f.input :min_players, label: "Players min", placeholder: "2", input_html: { class: 'inputfield playercount border-pink' } %>
+        <%= f.input :min_players, label: "min", placeholder: "2", input_html: { class: 'inputfield playercount border-pink' } %>
         <%= f.input :max_players, label: "max", placeholder: "5", input_html: { class: 'inputfield playercount border-blue' } %>
       </div>
-        <%= f.input :description, placeholder: "Describe the game (optional)", input_html: { class: 'inputfield desciption border-lime' } %>
+        <%= f.input :description, placeholder: "Describe the game", input_html: { class: 'inputfield desciption border-lime' } %>
       <div class="inline">
         <%= f.input :price, label: "Price per day", placeholder: "You decide!", input_html: { class: 'inputfield border-orange' } %>
       <%= f.input :location, placeholder: "Where are you?", input_html: { class: 'inputfield border-blue' } %>
 
       <label class="upload-button">
-      Upload photo
+      img
       <span style="display:none;">
         <%= f.input :photo, as: :file %>
       </span>

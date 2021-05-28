@@ -20,9 +20,10 @@ a {
 }
 
 .button-create {
-  color: #EF94CB;
+  margin-top: 40px;
+  color: #fff;
   font-weight: bold;
-  background-color: black;
+  background-color: #D94862;
   border-radius: 80px;
   padding: 15px;
   width: 200px;
@@ -30,7 +31,8 @@ a {
 }
 
 .button-create:hover{
-  color: #F49E4C;
+  background-color: #c53a54;
+  color: #fff;
 }
 
 .button-black:hover {
@@ -38,21 +40,20 @@ a {
 }
 
 .upload-button {
-  position: relative;
-  top: 10px;
-  color: #EF94CB;
-  font-weight: bold;
-  background-color: black;
-  height: 30px;
-  padding-bottom: 20px;
-  padding-top: 3px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border-radius: 80px;
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  position: relative;
+  color: #fff;
+  font-weight: bold;
+  background-color: #D94862;
+  padding: 12px;
+  border-radius: 80px;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .upload-button:hover {
-  color: #F49E4C;
+  color: #fff;
+  background-color: #c53a54;
 }
