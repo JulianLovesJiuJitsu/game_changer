@@ -33,3 +33,7 @@ document.addEventListener('turbolinks:load', () => {
   // initSelect2();
   initAnime();
 });
+
+import { initFlatpickr } from "../plugins/flatpickr";
+
+initFlatpickr();
