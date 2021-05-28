@@ -1,11 +1,11 @@
 <div class="container">
   <div class="form-wrapper" style="width: 400px; margin: 0 auto;">
-    <h2>Flatpickr Demo</h2>
+    <h2>Game Rental Dates</h2>
 
     <%= simple_form_for([@game, @rental]) do |f| %>
       <%= f.input :start_date, as: :string, required: false, input_html: {class: "datepicker"} %>
       <%= f.input :end_date, as: :string, required: false, input_html: {class: "datepicker"} %>
-      <%= f.button :submit, "Go", class: "btn btn-primary" %>
+      <%= f.button :submit, "rent", class: "nav-item nav-btn" %>
     <% end %>
   </div>
 </div>

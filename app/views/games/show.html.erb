@@ -1,23 +1,36 @@
 <div class="game-show-container">
-  <div class="col-4 bg-primary">
+  <div class="col-3">
     <div class="game-show-image">
       <%= cl_image_tag @game.photo.key %>
     </div>
   </div>
-  <div class="col-4 bg-warning">
+  <div class="col-9">
+    <div class="row mt-5 margin-left-100">
+      <div class="col-6 mt-5">
     <div class="game-show-description">
-    <h1><%= @game.name %></h1>
-    <p><%= @game.description %></p>
-    <p><strong>Category: </strong><%= @game.category %></p>
-    <p><strong>Players: </strong><%= @game.min_players %> - <%= @game.max_players %></p>
-    <p><strong>Availability: </strong><% @game.rented %></p>
-    <p><strong>Price: €</strong><%= @game.price %></p>
-    <p><strong>Location: </strong><%= @game.location %></p>
+      <div class="game-name-username">
+        <h1><%= @game.name %></h1>
+        <h2>shared by <%= @game.user.username %></h2>
+      </div>
+      <p><%= @game.description %></p>
+      <div class="game-info mt-5">
+        <p><strong>Category: </strong><%= @game.category %></p>
+        <p><strong>Players: </strong><%= @game.min_players %> - <%= @game.max_players %></p>
+        <p><strong>Availability: </strong><% @game.rented %></p>
+        <p><strong>Price: €</strong><%= @game.price %></p>
+        <p><strong>Location: </strong><%= @game.location %></p>
+      </div>
     </div>
   </div>
-  <div class="col-4 bg-success">
-    <%= render "rentals/rentalform" %>
+  <div class="col-6 mt-5">
+    <div class="calendar-rental">
+      <%= render "rentals/rentalform" %>
+    </div>
   </div>
+    </div>
+    
+</div>
+  
 
 
   
