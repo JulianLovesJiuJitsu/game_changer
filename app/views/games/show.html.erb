@@ -1,7 +1,31 @@
 <div class="game-show-container">
-  <div class="game-show-image">
+  <div class="col-4 bg-primary">
+    <div class="game-show-image">
+      <%= cl_image_tag @game.photo.key %>
+    </div>
+  </div>
+  <div class="col-4 bg-warning">
+    <div class="game-show-description">
+    <h1><%= @game.name %></h1>
+    <p><%= @game.description %></p>
+    <p><strong>Category: </strong><%= @game.category %></p>
+    <p><strong>Players: </strong><%= @game.min_players %> - <%= @game.max_players %></p>
+    <p><strong>Availability: </strong><% @game.rented %></p>
+    <p><strong>Price: €</strong><%= @game.price %></p>
+    <p><strong>Location: </strong><%= @game.location %></p>
+    </div>
+  </div>
+  <div class="col-4 bg-success">
+    <%= render "rentals/rentalform" %>
+  </div>
+
+
+  
+  <% if false %>
+      <div class="game-show-image">
     <%= cl_image_tag @game.photo.key %>
   </div>
+
   <div class="game-show-description">
     <h1><%= @game.name %></h1>
     <p><%= @game.description %></p>
@@ -12,6 +36,9 @@
     <p><strong>Location: </strong><%= @game.location %></p>
     <%= render "rentals/rentalform" %>
   </div>
+  <% end %>
+  
+
   <%# <div class="calender">
     
   </div> %>
