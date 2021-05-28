@@ -1,14 +1,77 @@
+.centerform {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .inline {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.form-inputs f.input {
-  border-radius: 20px;
+#upload-button {
+    background: black;
 }
 
 .formtest {
   line-height: 80px;
   border-radius-right: 20px;
   padding-left: 20px;
+}
+
+.inputfield {
+  line-height: 80px;
+  border-radius: 15px;
+  padding-left: 20px;
+}
+
+.playercount {
+  width: 90px;
+  padding-left: 30px;
+}
+
+.form-container {
+  border: 3px solid black;
+  border-radius: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: inset 0 0 10px white;
+}
+
+.description {
+  height: 50px;
+}
+
+form-inputs input {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.border-orange {
+  border: 3px solid #F49E4C;
+}
+
+.border-lime {
+  border: 3px solid #549F93;
+}
+
+.border-violet {
+  border: 3px solid #6571C3;
+}
+
+.border-pink {
+  border: 3px solid #EF94CB;
+}
+
+.border-blue {
+  border: 3px solid #1F2041;
+}
+
+.border-black {
+  order: 3px solid #1F2232;
 }

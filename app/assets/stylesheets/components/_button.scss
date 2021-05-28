@@ -1,4 +1,4 @@
-.btn {
+.button {
   width: 50%;
   margin: 0 auto;
   display: block;
@@ -8,7 +8,7 @@ a {
   text-decoration: none
 }
 
-.btn-black {
+.button-black {
   color: white;
   font-weight: bold;
   background-color: black;
@@ -19,6 +19,40 @@ a {
   padding-bottom: 20px;
 }
 
-.btn-black:hover {
+.button-create {
+  color: #EF94CB;
+  font-weight: bold;
+  background-color: black;
+  border-radius: 80px;
+  padding: 15px;
+  width: 200px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.button-create:hover{
+  color: #F49E4C;
+}
+
+.button-black:hover {
   text-decoration: none;
+}
+
+.upload-button {
+  position: relative;
+  top: 10px;
+  color: #EF94CB;
+  font-weight: bold;
+  background-color: black;
+  height: 30px;
+  padding-bottom: 20px;
+  padding-top: 3px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 80px;
+  align-items: center;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.upload-button:hover {
+  color: #F49E4C;
 }
