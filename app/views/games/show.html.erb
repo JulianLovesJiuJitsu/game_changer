@@ -1,37 +1,32 @@
-<div class="game-show-container">
-  <div class="col-3">
-    <div class="game-show-image">
-      <%= cl_image_tag @game.photo.key, crop: :fill %>
-    </div>
-  </div>
-  <div class="col-9">
-    <div class="row">
-      <div class="col-8">
-    <div class="game-show-description">
-      <div class="game-name-username">
-        <h1><%= @game.name %></h1>
-        <h2>shared by <%= @game.user.username %></h2>
+
+<div class="container">
+  <div class="game-show-container">
+    <div class="fistsection">
+      <div class="game-show-image">
+        <%= cl_image_tag @game.photo.key, crop: :fit %>
       </div>
-      <p><%= @game.description %></p>
-      <div class="game-info mt-1">
+      <div class="game-info mt-3">
         <p><strong><i class="fas fa-play-circle mr-3"></i></strong><%= @game.category %></p>
         <p><strong><i class="fas fa-user-friends mr-3"></i></strong><%= @game.min_players %> - <%= @game.max_players %></p>
         <p><strong><i class="fas fa-euro-sign mr-3"></i> </strong><%= @game.price %></p>
         <p><strong><i class="fas fa-map-pin mr-3"></i> </strong><%= @game.location %></p>
       </div>
     </div>
-  </div>
-  <div class="col-4 mt-5">
-    <div class="calendar-rental">
-      <%= render "rentals/rentalform" %>
+    <div class = "middle-section mt-4 col-5">
+      <div class="game-show-description">
+          <h1><%= @game.name %></h1>
+          <h4>shared by <%= @game.user.username %></h4>
+      </div>
+
+      <div class="scroll">
+        <p><%= @game.description %></p>
+      </div>
+
+    </div>
+    <div class="mt-5 col-4">
+      <div class="calendar-rental">
+        <%= render "rentals/rentalform" %>
+      </div>
     </div>
   </div>
-    </div>
-
-</div>
-
-
-  <%# <div class="calender">
-
-  </div> %>
 </div>
