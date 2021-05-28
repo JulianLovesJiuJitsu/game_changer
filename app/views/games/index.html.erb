@@ -1,37 +1,39 @@
-<div class="horizontal-form">
-  <%= form_tag games_path, method: :get, class: "game-search" do %>
-    <div class="search-element">
-      <label class="search-label"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>Search games</label>
-      <%= text_field_tag :query,
-          params[:query],
-          class: "search-input",
-          placeholder: "Search games"
-          %>
-    </div>
-    <%= button_tag(class: "search-button") do %>
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-    <% end %>
-  <% end %>
-</div>
-
-<div class="cards">
-  <% @games.each do |game| %>
-  <% if game.rentals.empty? %>
-    <%= link_to game_path(game) do %>
-        <div class="card-container">
-          <% if game.photo.attached? %>
-            <%= cl_image_tag game.photo.key %>
-            <div class="card-info">
-              <h1 class="card-name"><%= game.name %></h1>
-              <div class="card-index-info">
-                <p class="card-index-players"><i class="fas fa-user-friends"></i> <%= game.min_players %> - <%= game.max_players %></p>
-                <p class="card-index-location"><i class="fas fa-flag"></i> <%= game.location %></p>
-
-              </div>
-            </div>
-          <% end %>
-        </div>
-        <% end %>
+<div class="index-container">
+  <div class="horizontal-form">
+    <%= form_tag games_path, method: :get, class: "game-search" do %>
+      <div class="search-element">
+        <label class="search-label"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-box"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>Search a game</label>
+        <%= text_field_tag :query,
+            params[:query],
+            class: "search-input",
+            placeholder: "Type in the title of a game"
+            %>
+      </div>
+      <%= button_tag(class: "search-button") do %>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
       <% end %>
-  <% end %>
+    <% end %>
+  </div>
+</div>
+<div class="container">
+  <div class="cards">
+    <% @games.each do |game| %>
+    <% if game.rentals.empty? %>
+      <%= link_to game_path(game) do %>
+          <div class="card-container">
+            <% if game.photo.attached? %>
+              <%= cl_image_tag game.photo.key %>
+              <div class="card-info">
+                <h1 class="card-name"><%= game.name %></h1>
+                <div class="card-index-info">
+                  <p class="card-index-players"><i class="fas fa-user-friends"></i> <%= game.min_players %> - <%= game.max_players %></p>
+                  <p class="card-index-location"><i class="fas fa-map-pin mr-1"></i><%= game.location %></p>
+                </div>
+              </div>
+            <% end %>
+          </div>
+          <% end %>
+        <% end %>
+    <% end %>
+  </div>
 </div>
