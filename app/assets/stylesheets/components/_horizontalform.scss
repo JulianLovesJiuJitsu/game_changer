@@ -65,6 +65,7 @@ a:hover {
 .search-input {
   font-size: 16px;
   color: #777;
+  margin-left: 28px;
 }
 
 .feather-map-pin {
@@ -72,6 +73,18 @@ a:hover {
   color: #D94862;
 }
 
+.feather-box {
+  margin-right: 16px;
+  color: #D94862;
+}
+
 .game-search {
   width: 520px;
 }
+
+.index-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
