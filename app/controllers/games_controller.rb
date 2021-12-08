@@ -7,8 +7,6 @@ class GamesController < ApplicationController
     else
       @games = Game.all
     end
-
-
   end
 
   def show
