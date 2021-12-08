@@ -4,7 +4,7 @@
 
 ## **About the Project**
 
-A board game rental app made as an Airbnb clone for a group project at Le Wagon.
+A board game rental app made as an Airbnb clone for a group project at Le Wagon. Be a renter, a rentee, search, rate, all in your own account.
 
 ## **Built With**
 
