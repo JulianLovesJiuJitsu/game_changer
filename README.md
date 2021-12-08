@@ -1,6 +1,6 @@
 # Game Changer
 
-<img src="https://github.com/JulianLovesJiuJitsu/game_changer/tree/master/app/assets/images/gamechanger-homepage.png" height="500" />
+<img src="https://github.com/JulianLovesJiuJitsu/game_changer/blob/master/app/assets/images/gamechanger-homepage.png" height="500" width="1000" />
 
 ## **About the Project**
 
